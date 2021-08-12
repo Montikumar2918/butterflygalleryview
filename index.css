@@ -1,0 +1,114 @@
+section{
+    /*display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 1fr ;
+    /*grid-template-rows: 1fr 1.5fr;*/
+    gap: 1rem;
+    row-gap: 0.5rem;
+}
+
+/* cascading - Overding  */
+/* aafter this width overide the above style */
+@media (min-width:450px){
+section{
+   /* grid-template-columns: repeat(3,1fr);*/
+   grid-template-areas:
+   " two one three"
+   "four five six"
+}
+}
+
+/* 900px - laptop - all things same size 4 things in a row */
+@media (min-width:500px){
+section{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+
+
+
+div:nth-child(1){
+height:15rem;
+/*width: 15rem;*/
+background: crimson;
+/*margin-bottom:1rem;*/
+border:4px solid black;
+}
+div:nth-child(2){
+    height:15rem;
+    /*width: 15rem;*/
+    background: skyblue;
+    /*margin-bottom:1rem;*/
+    border:4px solid black;
+    }
+    div:nth-child(3){
+        height:15rem;
+       /* width: 15rem;*/
+        background: pink;
+       /* margin-bottom:1rem;*/
+       border:4px solid black;
+        }
+    
+        div:nth-child(4){
+            height:15rem;
+            /*width: 15rem;*/
+            background: grey;
+           /* margin-bottom:1rem;*/
+           border:4px solid black;
+            }
+    
+            div:nth-child(5){
+                height:15rem;
+                /*width: 15rem;*/
+                background: darkolivegreen;
+                /*margin-bottom:1rem;*/
+                border:4px solid black;
+                }
+                div:nth-child(6){
+                    height:15rem;
+                   /* width: 15rem;*/
+                    background: cyan;
+                    /*margin-bottom:1rem;*/
+                    border:4px solid black;
+                    
+                    }
+                    div:nth-child(1){
+                        background: url("https://image.shutterstock.com/image-photo/natural-pastel-background-morpho-butterfly-260nw-1481779412.jpg");
+                        background-size: cover;
+                        grid-area: one;
+                        }
+                        div:nth-child(2){
+                            background: url("https://images.unsplash.com/photo-1500350347612-85b7eff2f759?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sb3JmdWwlMjBidXR0ZXJmbHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+                            background-size: cover;
+                            grid-area: two;
+                            }
+    
+                            div:nth-child(3){
+                                background: url("https://i.pinimg.com/736x/d6/48/4f/d6484f56a5abfc22df6292d3429fda9b.jpg");
+                                background-size: cover;
+                                grid-area: three;
+                                }
+    
+                                div:nth-child(4){
+                                    background: url("https://s.w-x.co/util/image/w/in-butterfly_1.jpg?v=at&w=1280&h=720");
+                                    background-size: cover;
+                                    grid-area: four;
+                                    }
+    
+                                    div:nth-child(5){
+                                        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStszigZXdAvqM6JzhyN_vnNwVqANWC7wttqw&usqp=CAU");
+                                        background-size: cover;
+                                        grid-area: five;
+                                        }
+    
+                                        div:nth-child(6){
+                                            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGbd6A_hvzcE90CM82jWBW4QwSvuFsKsjtDQ&usqp=CAU");
+                                            background-size: cover;
+                                            grid-area: six;
+                                            }
+                        
+    
+        
+    
